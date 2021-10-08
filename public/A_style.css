@@ -150,9 +150,9 @@ ul > li > a{
     left: 10px;
     font-size: 40px;
 }
-/* .menu-bar{
+.menu-bar{
     width: 480px;
-} */
+}
 .menu-bar li:first-child{
     padding-right: 5px;
 }
@@ -199,9 +199,9 @@ ul > li > a{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;/*dấu đi phần bị tràn khi ảnh lớn ra*/
 }
 .imageMain::before{
     content: "";
@@ -209,9 +209,8 @@ ul > li > a{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("images/nền/sanh4.jpg");
-    size: 50%;
-    background-position: top;
+    background-image: url("images/logo/main1.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;/*nền ko cuộn theo khug nhìn*/
@@ -288,7 +287,7 @@ ul > li > a{
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -360,7 +359,7 @@ ul > li > a{
 
 .order-party-form{
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -515,7 +514,7 @@ form div{
     cursor: pointer;
     overflow: hidden;
 }
-.food-list-itme span{
+/* .food-list-itme span{
     width: 100%;
     height: 100%;
     left: 0;
@@ -525,7 +524,7 @@ form div{
 .food-list-itme:hover > span{
     background-color: rgba(121,0,0,.42); ;
     transition: all 0.3s ease;
-}
+} */
 .food{
     width: 80%;
     margin: auto;
@@ -608,7 +607,7 @@ form div{
     font-size: 15px;
     cursor: pointer;
 }
-.food-menu-button.active:hover{
+.food-menu-button.active{
     color: var(--main-color1);
 }
 

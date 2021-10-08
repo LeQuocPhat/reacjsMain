@@ -15,6 +15,7 @@ class A_spaces extends Component {
         })
     }
     render() {
+
         return (
             <>
                 <section class="space">
@@ -26,7 +27,7 @@ class A_spaces extends Component {
                             {this.state.weddinghalls.map(c =>
                                 <div class="space-party-row">
                                     <div class="space-party-img">
-                                        <img src={c.image} alt="sanh" />
+                                        <img src={c.image} alt="sanh2" />
                                     </div>
                                     <div class="space-party-content">
                                         <p> {c.description} </p>

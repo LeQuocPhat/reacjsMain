@@ -10,11 +10,11 @@ class A_modal extends React.Component {
           <Form.Row>
             <Form.Group as={Col} controlId="formGridName">
               <Form.Label>Tên</Form.Label>
-              <Form.Control type="text"  value= {this.props.temInfo.name} readonly/>
+              <Form.Control type="text" placeholder="Nhập tên" value= {this.props.temInfo.name} />
             </Form.Group>
             <Form.Group as={Col} controlId="formGridTK">
-              <Form.Label>Stk</Form.Label>
-              <Form.Control type="tel"  value= {this.props.temInfo.stk} readonly/>
+              <Form.Label>Số điện thoại</Form.Label>
+              <Form.Control type="tel"  />
             </Form.Group>
           </Form.Row>
 
@@ -26,28 +26,28 @@ class A_modal extends React.Component {
 
             <Form.Group as={Col} controlId="formGridBook">
               <Form.Label>Ngày đặc tiệc</Form.Label>
-              <Form.Control type="date"  value= {this.props.temInfo.organization_date} readonly/>
+              <Form.Control type="date"  Value= {this.props.temInfo.organization_date}/>
             </Form.Group>
             <Form.Group as={Col} controlId="formGridBook">
               <Form.Label>Ca</Form.Label>
-              <Form.Control type="text"  value= {this.props.temInfo.shift.name} readonly/>
+              <Form.Control type="text"  value= {this.props.temInfo.shift}/>
             </Form.Group>
           </Form.Row>
 
           <Form.Row>
             <Form.Group as={Col} controlId="formGridShiff">
                 <Form.Label>Menu</Form.Label>
-                <Form.Control type="text" value= {this.props.temInfo.menu.name} readonly/>
+                <Form.Control type="text" value= {this.props.temInfo.menu}/>
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridShiff">
                 <Form.Label>Sảnh</Form.Label>
-                <Form.Control type="text" value = {`${this.props.temInfo.wedding_hall.name}`} readonly/>
+                <Form.Control type="text" value = {`${this.props.temInfo.wedding_hall}`}/>
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridCity">
               <Form.Label>Tổng chi phí:</Form.Label>
-              <Form.Control type="text"  value= {this.props.temInfo.shift.price} readonly/>
+              <Form.Control type="text"  />
             </Form.Group>
           </Form.Row>
         </Form>

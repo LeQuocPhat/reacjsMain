@@ -11,13 +11,6 @@ export let endpoints = {
 'weddings': '/weddings/',
 'services': '/services/',
 'shift': '/shift/',
-'foods':'/foods/',
-'systems':'/systems/',
-"comments": "/comments/",
-// "addCommets":"/services/comments",
-"bankAccount":"/bankAccount/"
-// "add_comment" :(servicesId) =>  `/services/${servicesId}/add_comment/`
-
 }
 
 export let AuthAPI = axios.create({
